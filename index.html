@@ -241,6 +241,31 @@
       .mt-4 {
         margin-top: 1.5rem;
       }
+      /* Hero centering */
+      .hero .slider-item {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+      }
+      .hero .slider-item .text {
+        text-align: center;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+      }
+      /* Keep hero name on one line */
+      .hero .slider-item h1 span {
+        white-space: nowrap;
+      }
+      @media (max-width: 576px) {
+        .hero .slider-item h1 {
+          font-size: 32px;
+        }
+      }
     </style>
 
   </head>
@@ -286,11 +311,8 @@
         <div class="slider-item ">
           <div class="overlay"></div>
           <div class="container">
-            <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-              <div class="one-third js-fullheight order-md-last img" style="background-image:url();">
-                <div class="overlay"></div>
-              </div>
-              <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+              <div class="row d-md-flex no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
+               <div class="one-forth d-flex align-items-center justify-content-center ftco-animate" data-scrollax=" properties: { translateY: '0%' }">
                 <div class="text">
                   <span class="subheading">Hello!</span>
                   <h1 class="mb-4 mt-3">I'm
@@ -690,6 +712,102 @@
                       <li>Generated comprehensive performance reports with actionable insights</li>
                     </ul>
                   </li>
+                </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-4">
+          <div class="col-md-12">
+            <div class="resume-wrap ftco-animate h-100">
+              <span class="date">2025</span>
+              <h2>AskMe Book: AI-Powered PDF Q&A</h2>
+              <span class="position">Client-Side RAG with Gemini</span>
+              <p class="mt-4">Chat with your PDFs privately in-browser using Gemini; persistent per-document chat and markdown rendering.
+                <div class="tech-stack mt-2 mb-3">
+                  <span class="badge bg-primary me-2">React</span>
+                  <span class="badge bg-primary me-2">TypeScript</span>
+                  <span class="badge bg-primary me-2">pdf.js</span>
+                  <span class="badge bg-primary me-2">@google/genai</span>
+                  <span class="badge bg-primary">DOMPurify</span>
+                </div>
+                <h4 class="mt-4 mb-3">Highlights:</h4>
+                <ul>
+                  <li>Local PDF text extraction; privacy-first design</li>
+                  <li>Context-aware answers with persistent chat history</li>
+                  <li>Light/Dark modes with robust error handling</li>
+                </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-4">
+          <div class="col-md-6">
+            <div class="resume-wrap ftco-animate h-100">
+              <span class="date">2025</span>
+              <h2>Bucky AI Assistant</h2>
+              <span class="position">Desktop AI Dev Assistant with Voice & Screen Capture</span>
+              <p class="mt-4">Programming-focused AI assistant with voice commands, clipboard integration, and screen capture for context-aware help.
+                <div class="tech-stack mt-2 mb-3">
+                  <span class="badge bg-primary me-2">React 19</span>
+                  <span class="badge bg-primary me-2">TypeScript</span>
+                  <span class="badge bg-primary me-2">Vite</span>
+                  <span class="badge bg-primary">Gemini 2.5 Flash</span>
+                </div>
+                <h4 class="mt-4 mb-3">Highlights:</h4>
+                <ul>
+                  <li>Voice interaction, active listening, and streaming responses</li>
+                  <li>Clipboard jacking and screen scanning for rapid context</li>
+                  <li>Modern desktop UI with hide mode and shortcuts</li>
+                </ul>
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="resume-wrap ftco-animate h-100">
+              <span class="date">2025</span>
+              <h2>MediConnect – Healthcare System</h2>
+              <span class="position">Spring Boot Appointments & AI Symptom Checker</span>
+              <p class="mt-4">End-to-end healthcare platform with patient, doctor, and admin modules and AI-assisted symptom analysis.
+                <div class="tech-stack mt-2 mb-3">
+                  <span class="badge bg-primary me-2">Java 17</span>
+                  <span class="badge bg-primary me-2">Spring Boot 3</span>
+                  <span class="badge bg-primary me-2">Spring Security</span>
+                  <span class="badge bg-primary">OpenNLP</span>
+                </div>
+                <h4 class="mt-4 mb-3">Highlights:</h4>
+                <ul>
+                  <li>JWT auth, role-based access, and appointment workflows</li>
+                  <li>AI symptom checker with severity/urgency assessment</li>
+                  <li>Swagger docs, tests, and Docker deployment</li>
+                </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-4">
+          <div class="col-md-6">
+            <div class="resume-wrap ftco-animate h-100">
+              <span class="date">2025</span>
+              <h2>DocuShield – Document Fraud Detection</h2>
+              <span class="position">Flask/FastAPI OCR + NLP Forensics</span>
+              <p class="mt-4">AI-powered platform to detect forged documents using OCR, NLP, and image forensics with audit logging and reports.
+                <div class="tech-stack mt-2 mb-3">
+                  <span class="badge bg-primary me-2">Python 3.11</span>
+                  <span class="badge bg-primary me-2">Flask</span>
+                  <span class="badge bg-primary me-2">FastAPI</span>
+                  <span class="badge bg-primary me-2">Tesseract OCR</span>
+                  <span class="badge bg-primary">OpenCV</span>
+                </div>
+                <h4 class="mt-4 mb-3">Highlights:</h4>
+                <ul>
+                  <li>Text extraction, forgery detection, and fraud scoring</li>
+                  <li>User roles, analysis history, and PDF report exports</li>
+                  <li>Docker-ready with optional S3 storage</li>
                 </ul>
               </p>
             </div>
